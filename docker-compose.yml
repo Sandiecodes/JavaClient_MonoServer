@@ -6,7 +6,7 @@ services:
   ports:
    - "8080:8080"
   volumes:
-   - /Users/sandrakumi/Library/CloudStorage/OneDrive-UniversityofSaskatchewan/PhD_Courses/CMPT_436/Tutorials/JavaClient_MonoServer:/code
+   - ./:/code
   stdin_open: true
   tty: true
  java:
@@ -16,7 +16,7 @@ services:
    - "8081:80"
   command: ["bin/bash"]
   volumes:
-   - /Users/sandrakumi/Library/CloudStorage/OneDrive-UniversityofSaskatchewan/PhD_Courses/CMPT_436/Tutorials/JavaClient_MonoServer:/code
+   - ./:/code
   stdin_open: true
   tty: true
   
